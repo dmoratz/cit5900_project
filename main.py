@@ -24,4 +24,6 @@ for folder in subfolders:
         # Run the Python file. Adjust "python" to "python3" if needed.
         subprocess.run(["python", file_path])
 
+print("Part 5 must be run on Google Colab for Reproduction Purposes")
+
 input("Press Enter to exit...")
