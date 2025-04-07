@@ -23,3 +23,5 @@ for folder in subfolders:
         print(f"Running {file_path}...")
         # Run the Python file. Adjust "python" to "python3" if needed.
         subprocess.run(["python", file_path])
+
+input("Press Enter to exit...")
