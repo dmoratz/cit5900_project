@@ -250,9 +250,9 @@ def analyze_network(filepath):
 
     return G, metrics
 
-research_graph, metrics = analyze_network('unique_research_outputs.csv')
+research_graph, metrics = analyze_network('../part3/unique_research_outputs.csv')
 
-research_graph, metrics = analyze_network('unique_outputs_webscraping.csv')
+research_graph, metrics = analyze_network('../part3/unique_outputs_webscraping.csv')
 
 # Test data
 TEST_CSV_DATA = """title,authors,year,matched_dataset_terms,doi,topics,affiliations,location

@@ -2,6 +2,8 @@ import requests
 import time
 import pandas as pd
 
+print("This file will only run if you uncomment out the code at the bottom!")
+
 def reconstruct_abstract(inverted_index):
     """
     Reconstructs the abstract text from an inverted index.
