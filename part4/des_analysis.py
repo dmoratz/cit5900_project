@@ -204,3 +204,6 @@ def part4_des_pipeline():
     print("\n--- What-if Scenario: More Available Editors ---")
     # Increase number of editors from 2 to 3
     run_simulation(editors_capacity=3)
+
+if __name__ == "__main__":
+    part4_des_pipeline()

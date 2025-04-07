@@ -6,8 +6,6 @@ import pandas as pd
 import os
 from fuzzywuzzy import fuzz
 
-print("Current working directory:", os.getcwd())
-
 # Determine the directory of the current .py file
 script_dir = os.path.dirname(os.path.realpath(__file__))
 
