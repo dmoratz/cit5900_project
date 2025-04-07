@@ -27,6 +27,7 @@ import re
 import ast
 import seaborn as sns
 import matplotlib.pyplot as plt
+import transformers
 from bertopic import BERTopic
 import nltk
 from nltk.corpus import stopwords
