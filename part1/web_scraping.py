@@ -12,6 +12,10 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import re
 import time
+import os
+
+# Determine the directory of the current .py file
+script_dir = os.path.dirname(os.path.realpath(__file__))
 
 BASE_URL = "https://ideas.repec.org"
 LIST_PAGE = "https://ideas.repec.org/s/cen/wpaper.html"
@@ -157,7 +161,12 @@ cols = [
     "mention_acknowledgment", "mention_restricted_data", "mention_disclosure_review",
     "mention_rdc"
 ]
-pd.DataFrame(results)[cols].to_csv("web_scraping_full_output.csv", index=False)
+
+# Build the output file path in the same directory
+output_file = os.path.join(script_dir, "web_scraping_full_output.csv")
+
+
+pd.DataFrame(results)[cols].to_csv(output_file, index=False)
 print("\n Done! Saved to 'web_scraping_full_output.csv'")
 
 def test_normalize_name():

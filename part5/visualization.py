@@ -17,8 +17,6 @@ Datasets used:
 Dependencies listed below:
 """
 
-!pip install bertopic
-
 import pandas as pd
 import numpy as np
 import plotly.express as px

@@ -1,7 +1,11 @@
 import pandas as pd
 import numpy as np
+import os
 
 print("Running Github Scraper")
+
+# Determine the directory of the current .py file
+script_dir = os.path.dirname(os.path.realpath(__file__))
 
 url = 'https://raw.githubusercontent.com/dingkaihua/fsrdc-external-census-projects/master/ProjectsAllMetadata.xlsx'
 try:
@@ -245,4 +249,7 @@ print("Final Dataset")
 print(final_dataset.shape)
 
 # Save the data
-final_dataset.to_csv("dataset_data.csv", index=False)
+# Build the output file path in the same directory
+output_file = os.path.join(script_dir, "dataset_data.csv")
+
+final_dataset.to_csv(output_file, index=False)

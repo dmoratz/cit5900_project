@@ -1,8 +1,12 @@
 import requests
 import time
 import pandas as pd
+import os
 
 print("This file will only run if you uncomment out the code at the bottom!")
+
+# Determine the directory of the current .py file
+script_dir = os.path.dirname(os.path.realpath(__file__))
 
 def reconstruct_abstract(inverted_index):
     """
@@ -193,9 +197,12 @@ def main():
 
     # Save the results to a CSV file.
     output_df = pd.DataFrame(results)
-    output_csv = "openalex_researcher_datasets_matches.csv"
-    output_df.to_csv(output_csv, index=False)
-    print(f"Saved {len(output_df)} matching records to {output_csv}")
+
+    # Build the output file path in the same directory
+    output_file = os.path.join(script_dir, "openalex_researcher_datasets_matches.csv")
+
+    output_df.to_csv(output_file, index=False)
+    print(f"Saved {len(output_df)} matching records to {output_file}")
 
 # Run the file
 # Currently commented out to prevent file running- it takes 10 hours to process!

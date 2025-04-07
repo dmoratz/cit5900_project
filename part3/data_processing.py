@@ -3,7 +3,11 @@
 
 import numpy as np
 import pandas as pd
+import os
 from fuzzywuzzy import fuzz
+
+# Determine the directory of the current .py file
+script_dir = os.path.dirname(os.path.realpath(__file__))
 
 
 # Define function to clean 2024 research output data set
@@ -461,12 +465,13 @@ def data_pipeline(API):
     
     # Export the unique records into a csv file
     # Based on whether it's API data, give differnt names for files
+    # Build the output file path in the same directory
     if API:
-        unique_output_file_name = "unique_research_outputs.csv"
-        matched_output_file_name = "matched_research_outputs.csv"
+        unique_output_file_name = os.path.join(script_dir, "unique_research_outputs.csv")
+        matched_output_file_name = os.path.join(script_dir, "matched_research_outputs.csv")
     else:
-        unique_output_file_name = "unique_outputs_webscraping.csv"
-        matched_output_file_name = "matched_outputs_webscraping.csv"
+        unique_output_file_name = os.path.join(script_dir, "unique_outputs_webscraping.csv")
+        matched_output_file_name = os.path.join(script_dir, "matched_outputs_webscraping.csv")
     unique_records.to_csv(unique_output_file_name, index=False)
 
     # Save all matched records in matched_records
