@@ -97,20 +97,20 @@ def clean_text(text):
 """# Data Ingestion and Processing"""
 
 # unique data from API
-df=load_data('../part3/unique_research_outputs.csv')
+df=load_data('part3/unique_research_outputs.csv')
 # unique data from webscraping
-df_webscraping =load_data('../part3/unique_outputs_webscraping.csv')
+df_webscraping =load_data('part3/unique_outputs_webscraping.csv')
 # 2024 data compiled earlier
 data_24 =load_data_from_url("https://github.com/dingkaihua/fsrdc-external-census-projects/blob/master/ResearchOutputs.xlsx")
 
 # checking missing values
-print(df.isnull().sum())
+# print(df.isnull().sum())
 
 # checking missing values
-print(df_webscraping.isnull().sum())
+# print(df_webscraping.isnull().sum())
 
 # checking missing values in 2024 dataset
-print(data_24.isnull().sum())
+# print(data_24.isnull().sum())
 
 if len(data_24) == 1735:
     print(f"Validation passed: The dataset contains {len(data_24)} rows.")
@@ -620,7 +620,7 @@ reference_date = pd.Timestamp('2025-03-30')
 # Calculate days since publication
 df_subset_1989['days_since_publication'] = (reference_date - df_subset_1989['PublicationDate']).dt.days
 
-print(df_subset_1989.isnull().sum())
+# print(df_subset_1989.isnull().sum())
 
 df_subset_1989.head(n=3)
 
