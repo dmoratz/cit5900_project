@@ -6,6 +6,8 @@ import pandas as pd
 import os
 from fuzzywuzzy import fuzz
 
+print("Current working directory:", os.getcwd())
+
 # Determine the directory of the current .py file
 script_dir = os.path.dirname(os.path.realpath(__file__))
 
@@ -402,10 +404,10 @@ def data_pipeline(API):
         # Read in different files based on if it's API data
         if API:
             # API data
-            outputs = pd.read_csv("../part2/openalex_researcher_datasets_matches.csv")
+            outputs = pd.read_csv("part2/openalex_researcher_datasets_matches.csv")
         else:
             # Webscraping data
-            outputs = pd.read_csv("../part1/web_scraping_full_output.csv")      
+            outputs = pd.read_csv("part1/web_scraping_full_output.csv")      
     except FileNotFoundError:
         print("Error: The file was not found.")
     except Exception as e:

@@ -15,6 +15,7 @@ import matplotlib.pyplot as plt
 from community import community_louvain
 import re
 import itertools
+import os
 
 def clean_author_name(author_str):
     """Clean individual author names by removing extra characters and normalizing."""
@@ -42,7 +43,9 @@ def process_authors_field(authors_str):
 
 def load_and_preprocess_data(filepath):
     """Load and preprocess the research outputs dataset."""
-    df = pd.read_csv(filepath)
+    full_path = os.path.join("part3", filepath)
+    full_path = full_path.replace("\\", "/")
+    df = pd.read_csv(full_path)
 
     # Remove duplicate titles (keeping the first occurrence)
     df = df.drop_duplicates(subset=['title'], keep='first')
@@ -250,9 +253,9 @@ def analyze_network(filepath):
 
     return G, metrics
 
-research_graph, metrics = analyze_network('../part3/unique_research_outputs.csv')
+research_graph, metrics = analyze_network('unique_research_outputs.csv')
 
-research_graph, metrics = analyze_network('../part3/unique_outputs_webscraping.csv')
+research_graph, metrics = analyze_network('unique_outputs_webscraping.csv')
 
 # Test data
 TEST_CSV_DATA = """title,authors,year,matched_dataset_terms,doi,topics,affiliations,location
