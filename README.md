@@ -1,10 +1,5 @@
 # Project for CIT 5900
 
-To run the files, simply run main.py
+## Organization
 
-Dependencies Required:
-numpy, pandas, fuzzywuzzy, os, subprocess, requests, BeautifulSoup, re, time, networkx, ast, collections, matplotlib, community, itertools, simpy, random, bertopic, io, seaborn, nltk, string, statsmodels.formula.api, umap, hdbscan, unittest, python-louvain
-
-## To run the API integration, the file needs to be opened and the final two lines need to be uncommented. Warning: this file takes 10 hours to process!
-
-## To run Part 5, upload the files in the Part 5 folder to Google Colab. This includes visualization.ipynb, unique_outputs_webscraping.csv and unique_research_outputs.csv
+Project 2 and Project 3 are two separate subfolders. For details on those projects, please see the README in each folder respectively.
