@@ -316,7 +316,7 @@ def main():
 # Run the file
 # Currently commented out to prevent file running- it takes 10 hours to process!
 # So uncomment these lines if you'd like the file to run
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+#    main()
 
-input("Press Enter to exit...")
+# input("Press Enter to exit...")
