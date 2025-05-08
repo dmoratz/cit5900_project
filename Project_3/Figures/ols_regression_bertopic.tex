@@ -1,0 +1,46 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}                        &  log\_citations  & \textbf{  R-squared:         } &     0.038   \\
+\textbf{Model:}                                &       OLS        & \textbf{  Adj. R-squared:    } &     0.035   \\
+\textbf{Method:}                               &  Least Squares   & \textbf{  F-statistic:       } &     11.17   \\
+\textbf{Date:}                                 & Thu, 08 May 2025 & \textbf{  Prob (F-statistic):} &  2.91e-22   \\
+\textbf{Time:}                                 &     18:47:02     & \textbf{  Log-Likelihood:    } &   -7376.3   \\
+\textbf{No. Observations:}                     &        3355      & \textbf{  AIC:               } & 1.478e+04   \\
+\textbf{Df Residuals:}                         &        3342      & \textbf{  BIC:               } & 1.486e+04   \\
+\textbf{Df Model:}                             &          12      & \textbf{                     } &             \\
+\textbf{Covariance Type:}                      &       HC3        & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                               & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}                             &       3.0504  &        0.860     &     3.548  &         0.000        &        1.365    &        4.736     \\
+\textbf{C(BERTopicLabel)[T.Crime]}             &       0.1711  &        0.922     &     0.186  &         0.853        &       -1.636    &        1.978     \\
+\textbf{C(BERTopicLabel)[T.Data Estimation]}   &      -0.5055  &        0.875     &    -0.578  &         0.563        &       -2.220    &        1.209     \\
+\textbf{C(BERTopicLabel)[T.Education]}         &       1.3112  &        1.076     &     1.218  &         0.223        &       -0.798    &        3.421     \\
+\textbf{C(BERTopicLabel)[T.Environment]}       &       1.4264  &        0.975     &     1.463  &         0.143        &       -0.485    &        3.337     \\
+\textbf{C(BERTopicLabel)[T.Firms]}             &       0.4010  &        0.859     &     0.467  &         0.640        &       -1.282    &        2.084     \\
+\textbf{C(BERTopicLabel)[T.General Economics]} &       0.6126  &        0.866     &     0.708  &         0.479        &       -1.084    &        2.310     \\
+\textbf{C(BERTopicLabel)[T.Healthcare]}        &       0.3469  &        0.870     &     0.399  &         0.690        &       -1.358    &        2.052     \\
+\textbf{C(BERTopicLabel)[T.None]}              &      -0.9911  &        0.986     &    -1.005  &         0.315        &       -2.923    &        0.941     \\
+\textbf{C(BERTopicLabel)[T.Urban Studies]}     &       0.0925  &        0.859     &     0.108  &         0.914        &       -1.591    &        1.775     \\
+\textbf{YearsSinceStart}                       &       0.0507  &        0.006     &     8.721  &         0.000        &        0.039    &        0.062     \\
+\textbf{TitleLen}                              &      -0.0028  &        0.001     &    -2.026  &         0.043        &       -0.005    &    -8.98e-05     \\
+\textbf{top10}                                 &      -0.1181  &        0.087     &    -1.350  &         0.177        &       -0.290    &        0.053     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       & 135.009 & \textbf{  Durbin-Watson:     } &    1.468  \\
+\textbf{Prob(Omnibus):} &   0.000 & \textbf{  Jarque-Bera (JB):  } &  151.259  \\
+\textbf{Skew:}          &   0.520 & \textbf{  Prob(JB):          } & 1.43e-33  \\
+\textbf{Kurtosis:}      &   2.972 & \textbf{  Cond. No.          } & 4.43e+03  \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors are heteroscedasticity robust (HC3) \newline
+ [2] The condition number is large, 4.43e+03. This might indicate that there are \newline
+ strong multicollinearity or other numerical problems.
