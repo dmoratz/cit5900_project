@@ -12,12 +12,12 @@ This section enhances data by extracting relevant publication information, inclu
 
 ### Part 3 - EDA and Broader Analysis
 
-This section engages in our initial data exploration and our analysis, producing the figures and results used on our website
+This section engages in our initial data exploration and our analysis, producing the figures and results used on our website. This file requires running in Google Colab to guarantee execution.
 
 
 ## Running the files
 
-While each section has files that can be run independently, the entire project can be executed via main.py. Simply running main.py will execute all .py files in the project.
+While each section has files that can be run independently, the entire project can be executed via main.py. Simply running main.py will execute all .py files in the project. Note, this does not include the analysis done in Part 3, which requires execution in Google Colab
 
 ## Dependencies Required:
 numpy, pandas, fuzzywuzzy, python-Levenshtein, os, subprocess, requests, BeautifulSoup, re, time, networkx, ast, collections, matplotlib, community, itertools, simpy, random, bertopic, io, seaborn, nltk, string, statsmodels.formula.api, umap, hdbscan, unittest, python-louvain
