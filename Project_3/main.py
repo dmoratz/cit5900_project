@@ -6,7 +6,7 @@ base_dir = os.getcwd()
 
 # Find all subdirectories that start with "Step "
 subfolders = [f for f in os.listdir(base_dir)
-              if os.path.isdir(os.path.join(base_dir, f)) and f.startswith("part")]
+              if os.path.isdir(os.path.join(base_dir, f)) and f.startswith("Part")]
 
 # Optionally, sort the subfolders to run them in order
 subfolders.sort()
