@@ -3,6 +3,8 @@ import requests
 import time
 import os
 
+print("Must uncomment final lines for script to execute!")
+
 def reconstruct_abstract(inverted_index):
     """
     Reconstructs the abstract text from an inverted index.
@@ -139,9 +141,11 @@ def process_csv(output_csv):
     df.to_csv(output_csv, index=False)
     print(f"Processed CSV saved as {output_csv}")
 
-if __name__ == "__main__":
-    script_dir = os.path.dirname(os.path.realpath(__file__))
-    file_path = os.path.join(script_dir, "cleaned_biblio.csv")
-    df = pd.read_csv(file_path, encoding='utf-8')
-    output_csv = "cleaned_abstracts_project3.csv"
-    process_csv(output_csv)
+# Must be uncommented for file to run!
+
+#if __name__ == "__main__":
+#    script_dir = os.path.dirname(os.path.realpath(__file__))
+#    file_path = os.path.join(script_dir, "cleaned_biblio.csv")
+#    df = pd.read_csv(file_path, encoding='utf-8')
+#    output_csv = "cleaned_abstracts_project3.csv"
+#    process_csv(output_csv)
