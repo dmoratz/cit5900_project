@@ -14,7 +14,6 @@ This section enhances data by extracting relevant publication information, inclu
 
 This section engages in our initial data exploration and our analysis, producing the figures and results used on our website. This file requires running in Google Colab to guarantee execution.
 
-
 ## Running the files
 
 While each section has files that can be run independently, the entire project can be executed via main.py. Simply running main.py will execute all .py files in the project. Note, this does not include the analysis done in Part 3, which requires execution in Google Colab
@@ -24,4 +23,4 @@ numpy, pandas, fuzzywuzzy, python-Levenshtein, os, subprocess, requests, Beautif
 
 ### To run the API integration, the api_integration.py file needs to be opened and the final two lines need to be uncommented. Warning: this file takes 10 hours to process!
 
-## To run Part 5, upload the files in the Part 5 folder to Google Colab. This includes visualization.ipynb, unique_outputs_webscraping.csv and unique_research_outputs.csv
+## To run Part 3, upload the files in the Part_3 folder to Google Colab. This includes analysis.ipynb, cleaned_abstracts_project3.csv, output_matches_new.csv and output_classification.csv
