@@ -21,6 +21,6 @@ While each section has files that can be run independently, the entire project c
 ## Dependencies Required:
 numpy, pandas, fuzzywuzzy, python-Levenshtein, os, subprocess, requests, BeautifulSoup, re, time, networkx, ast, collections, matplotlib, community, itertools, simpy, random, bertopic, io, seaborn, nltk, string, statsmodels.formula.api, umap, hdbscan, unittest, python-louvain
 
-### To run the API integration, the api_integration.py file needs to be opened and the final two lines need to be uncommented. Warning: this file takes 10 hours to process!
+### To run the API integration, the api_integration.py and abstract_search_updated.py file both need to be opened and the final lines need to be uncommented. Warning: these files takes 10 hours to process!
 
 ## To run Part 3, upload the files in the Part_3 folder to Google Colab. This includes analysis.ipynb, cleaned_abstracts_project3.csv, output_matches_new.csv and output_classification.csv
